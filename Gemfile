@@ -49,8 +49,6 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
 end
 
-gem "better_errors", "~> 2.10", ">= 2.10.1"
-
 gem 'bulma-rails', '~> 0.9.4'
 
 gem 'simple_form', '~> 5.3'
@@ -67,7 +65,8 @@ group :development do
   # gem "spring"
 
   gem 'guard', '~> 2.18', '>= 2.18.1'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem "better_errors", "~> 2.10", ">= 2.10.1"
 end
 
 group :test do
